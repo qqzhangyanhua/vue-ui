@@ -2,8 +2,10 @@ import { App } from "vue";
 import Button from "@axzo-ui/button";
 import Icon from "@axzo-ui/icon";
 import ButtonGroup from "@axzo-ui/button-group";
+import Col from "@axzo-ui/col/src";
+import Row from "@axzo-ui/row/src";
 
-const components = [Button, Icon, ButtonGroup];
+const components = [Button, Icon, ButtonGroup, Row, Col];
 const install = (app: App): void => {
   components.forEach((component) => {
     app.component(component.name, component);
