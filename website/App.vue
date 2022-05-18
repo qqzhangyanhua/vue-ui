@@ -16,6 +16,40 @@
       <z-button type="success">下一页</z-button>
     </z-button-group>
     <z-icon name="pen"></z-icon>
+    <z-row tag="div">
+      <z-col tag="p" :span="4">
+        <div style="background: rebeccapurple">11</div>
+      </z-col>
+      <z-col tag="p" :span="4" :offset="4">
+        <div style="background: pink">11</div>
+      </z-col>
+      <z-col tag="p" :span="4">
+        <div style="background: yellow">11</div>
+      </z-col>
+    </z-row>
+    <z-row tag="div" :gutter="40">
+      <z-col tag="p" :span="8">
+        <div style="background: rebeccapurple">11</div>
+      </z-col>
+      <z-col tag="p" :span="8">
+        <div style="background: pink">11</div>
+      </z-col>
+      <z-col tag="p" :span="8">
+        <div style="background: yellow">11</div>
+      </z-col>
+    </z-row>
+
+    <z-row tag="div" justify="center">
+      <z-col tag="p" :span="2">
+        <div style="background: rebeccapurple">11</div>
+      </z-col>
+      <z-col tag="p" :span="2">
+        <div style="background: pink">11</div>
+      </z-col>
+      <z-col tag="p" :span="8">
+        <div style="background: yellow">11</div>
+      </z-col>
+    </z-row>
   </div>
 </template>
 <script lang="ts" setup>
