@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "z-icon-faimaly";
+  /* Project id 1133321 */
+  src: url("./fonts/iconfont.woff2?t=1652540866311") format("woff2"), url("./fonts/iconfont.woff?t=1652540866311") format("woff"), url("./fonts/iconfont.ttf?t=1652540866311") format("truetype");
+}
+
+[class^="z-icon-"] {
+  font-family: "z-icon-faimaly" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.z-icon-pen:before {
+  content: "\e608";
+}
+
+.z-icon-Aa:before {
+  content: "\e636";
+}
+
+.z-icon-fangdajing:before {
+  content: "\e637";
+}
+/*# sourceMappingURL=icon.css.map */

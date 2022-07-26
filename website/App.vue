@@ -50,11 +50,17 @@
         <div style="background: yellow">11</div>
       </z-col>
     </z-row>
+
+    <z-checkbox v-model="checkVal" @change="handelChange">checkbox</z-checkbox>
+    <ZCheckboxGroup />
   </div>
 </template>
 <script lang="ts" setup>
+import { useCheckbox } from "./hooks/useCheckbox.ts";
 const handelClick = (e) => {
-  console.log("打印---", e);
+  console.log("打印---", e, checkVal.value);
 };
+
+const { checkVal, handelChange } = useCheckbox();
 </script>
 <style lang="scss" scoped></style>

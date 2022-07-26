@@ -1,5 +1,5 @@
 @import "./common/var.scss";
-@import "./mixins/concig.scss";
+@import "./mixins/mixin.scss";
 @include b(button-group) {
   & > .#{$namespace}-button {
     &:first-child {

@@ -4,10 +4,21 @@ import Icon from "@axzo-ui/icon";
 import ButtonGroup from "@axzo-ui/button-group";
 import Col from "@axzo-ui/col/src";
 import Row from "@axzo-ui/row/src";
+import Checkbox from "@axzo-ui/checkbox";
+import CheckboxGroup from "@axzo-ui/checkbox-group";
 
-const components = [Button, Icon, ButtonGroup, Row, Col];
+const components = [
+  Button,
+  Icon,
+  ButtonGroup,
+  Row,
+  Col,
+  Checkbox,
+  CheckboxGroup,
+];
 const install = (app: App): void => {
   components.forEach((component) => {
+    console.log("ssssssssss", component);
     app.component(component.name, component);
   });
 };

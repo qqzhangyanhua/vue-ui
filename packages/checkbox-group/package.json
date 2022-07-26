@@ -1,0 +1,29 @@
+{
+  "name": "@axzo-ui/checkbox-group",
+  "version": "0.0.1-alpha.0",
+  "description": "> TODO: description",
+  "author": "zhangyanhua <939593210@qq.com>",
+  "homepage": "https://github.com/qqzhangyanhua/vue-ui#readme",
+  "license": "ISC",
+  "main": "lib/checkbox-group.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qqzhangyanhua/vue-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/qqzhangyanhua/vue-ui/issues"
+  }
+}

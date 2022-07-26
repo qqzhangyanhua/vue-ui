@@ -1,0 +1,65 @@
+.z-button {
+  display: inline-block;
+  min-height: 40px;
+  outline: none;
+  border: #817272;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0 15px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.z-button [class*="z-icon-"] {
+  vertical-align: middle;
+}
+
+.z-button [class*="z-icon-"] + span {
+  margin-left: 5px;
+}
+
+.z-button.is-disabled {
+  cursor: not-allowed;
+  background: #f2f2f2;
+}
+
+.z-button.is-loading {
+  pointer-events: none;
+}
+
+.z-button.is-round {
+  border-radius: 20px;
+}
+
+.z-button--primary {
+  color: #ffffff;
+  background-color: #409eff;
+  border-color: #409eff;
+}
+
+.z-button--success {
+  color: #ffffff;
+  background-color: #67c23a;
+  border-color: #67c23a;
+}
+
+.z-button--info {
+  color: #ffffff;
+  background-color: #909399;
+  border-color: #909399;
+}
+
+.z-button--danger {
+  color: #ffffff;
+  background-color: #f56c6c;
+  border-color: #f56c6c;
+}
+
+.z-button--warning {
+  color: #ffffff;
+  background-color: #e6a23c;
+  border-color: #e6a23c;
+}
+/*# sourceMappingURL=button.css.map */
