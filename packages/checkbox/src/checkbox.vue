@@ -7,16 +7,17 @@
         v-model="model"
         :checked="isChecked"
         @change="handelChange"
+        :value="label"
       />
     </span>
     <span class="z-checkbox-label">
-      <slot></slot>
+      <slot>{{label}}</slot>
     </span>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import { useCheckbox } from "./useCheckbox.ts";
+import { useCheckbox } from "./useCheckbox";
 export default defineComponent({
   name: "ZCheckbox",
   props: {

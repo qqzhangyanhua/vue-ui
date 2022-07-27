@@ -52,15 +52,20 @@
     </z-row>
 
     <z-checkbox v-model="checkVal" @change="handelChange">checkbox</z-checkbox>
-    <ZCheckboxGroup />
+    <ZCheckboxGroup  v-model="checkValList" >
+    <z-checkbox v-for="item in arr" :key="item" :label="item"></z-checkbox>
+    
+    </ZCheckboxGroup>
   </div>
 </template>
 <script lang="ts" setup>
-import { useCheckbox } from "./hooks/useCheckbox.ts";
+import { ref } from "vue";
+import { useCheckbox } from "./hooks/useCheckbox";
 const handelClick = (e) => {
   console.log("打印---", e, checkVal.value);
 };
-
+const arr =['上海','北京','南昌','湖南']
+const checkValList = ref([])
 const { checkVal, handelChange } = useCheckbox();
 </script>
 <style lang="scss" scoped></style>
